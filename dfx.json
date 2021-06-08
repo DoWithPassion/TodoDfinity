@@ -1,0 +1,14 @@
+{
+    "canisters":{
+        "todo_frontend":{
+            "type":"assets",
+            "frontend": {
+                "entrypoint": "app/frontend/src/index.html"
+              },
+            "source":["dist/todo_frontend/"]
+        },
+        "todo_backend":{
+            "main":"app/backend/todo_app/main.mo"
+        }
+    }
+}

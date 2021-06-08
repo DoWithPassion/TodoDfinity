@@ -1,0 +1,11 @@
+type ToDo = 
+ record {
+   completed: bool;
+   description: text;
+   id: nat;
+   title: text;
+ };
+service : {
+  addToDo: (text, text) -> ();
+  showToDos: () -> (vec ToDo) query;
+}
